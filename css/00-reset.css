@@ -1,0 +1,164 @@
+/* PHASE 0: Reset */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+
+  background-color: transparent;
+
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* UTILs */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* SHARED */
+
+body {
+  background-color: lightgray;
+}
+
+
+/* navbar, general */
+
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  width: 800px;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.navbar-logo {
+  float: left;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 70px;
+}
+
+.navbar-logo:hover {
+  color: white;
+  background-color: black;
+}
+
+.navbar-list {
+  float: right;
+  line-height: 70px;
+}
+
+.navbar-list > li {
+  float: left;
+  line-height: 70px;
+
+}
+
+.navbar-list li a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-list li:hover {
+  color: black;
+  background-color: white
+}
+
+
+
+
+/* notification badge */
+.badge {
+  padding: 1px 6px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* notification dropdown */
+
+li:hover .badge {
+  background-color: darkgray;
+  color: white;
+}
+
+li:hover > .notifications {
+  display: block;
+}
+
+.notifications > li {
+  background-color: white;
+  line-height: 40px;
+}
+
+.notifications > li:hover::before {
+  content: ">";
+  position: absolute;
+  font-size: 30px;
+  color: red;
+}
+
+/* .notice:hover {
+  border-bottom: 3px solid black;
+} */
+
+.notifications {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+
+}
+
+button:hover,
+input[type="submit"] {
+  cursor: pointer;
+}
